@@ -33,24 +33,11 @@ public class akçsdf {
 				primeiraclasse[n1] = token[5];
 				n1++;
 			}		
-			for (int i = 0; i < n1; i++) {
-				System.out.println(numero[i]);
-			}
-			for (int i = 0; i < n1; i++) {
-				System.out.println(origem[i]);
-			}
-			for (int i = 0; i < n1; i++) {
-				System.out.println(destino[i]);
-			}
-			for (int i = 0; i < n1; i++) {
-				System.out.println(economica[i]);
-			}
-			for (int i = 0; i < n1; i++) {
-				System.out.println(executiva[i]);
-			}
-			for (int i = 0; i < n1; i++) {
-				System.out.println(primeiraclasse[i]);
-			}
+		 	for(int c = 0;c<n1;c++){
+				System.out.println(numero[c]+" -> De: "+origem[c]+" p/"+destino[c]+
+						   " Classe econo: R$"+economica[c]+" Classe Exec. R$"+executiva[c]+
+						  "1ª Classe R$"+primeiraclasse[c]);
+			}			
 			
 			int q = imput.nextInt();
 			token[0] = q;
