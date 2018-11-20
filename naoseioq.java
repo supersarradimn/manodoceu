@@ -1,14 +1,13 @@
 package vey;
-import java.util.Scanner;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-  
 
-public class akçsdf {
-	 static void manodoceu() throws FileNotFoundException {
+public class vey {
+	static void manodoceu() throws FileNotFoundException {
 		 Scanner imput = new Scanner(System.in);
-			Scanner arquivoNomes = new Scanner(new File("mano do ceu"));
+			Scanner arquivoNomes = new Scanner(new File("manodoceu"));
 			int n=0;
 			System.out.println(" Ótimo os voos disponíveis com seus numeros, origem, destino e classe estao escritos respectivamente.");
 			System.out.println(" Qual voo o(a) Senhor(a) deseja?");
@@ -34,19 +33,25 @@ public class akçsdf {
 				n1++;
 			}		
 		 	for(int c = 0;c<n1;c++){
-				System.out.println(numero[c]+" -> De: "+origem[c]+" p/"+destino[c]+
-						   " Classe econo: R$"+economica[c]+" Classe Exec. R$"+executiva[c]+
-						  "1ª Classe R$"+primeiraclasse[c]);
+				System.out.println(numero[c]+" -> De: "+origem[c]+" para "+destino[c]+
+						   " Classe econômica: R$ "+economica[c]+" Classe Executiva: R$ "+executiva[c]+
+						  " Primeira Classe: R$"+primeiraclasse[c]);
 			}			
+			System.out.print("Digite o voo desejado: ");
+			int opt = imput.nextInt();
+			salvaDados(opt);
 			
-			int q = imput.nextInt();
-			token[0] = q;
 			
 		}
 		
-   static void manodoceu1()throws FileNotFoundException{
+  private static void salvaDados(int opt) {
+		
+		
+	}
+
+static void manodoceu1()throws FileNotFoundException{
 	   
-   }
+  }
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner imput = new Scanner(System.in);
 		System.out.println("Olá, bem vindo a companhia aérea Mano do Céu");
